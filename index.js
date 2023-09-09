@@ -5,8 +5,8 @@ dotenv.config()
 const app = express()
 
 const server = require('http').createServer(app)
-const { Server } = require('socket.io')
-const { addUser } = require('./utils/Users')
+const {Server} = require('socket.io')
+const {addUser} = require('./utils/Users')
 
 const io = new Server(server)
 
